@@ -47,8 +47,45 @@ class OpenAIService:
         
         return response.choices[0].message.content
     
-    def generate_cover_letter(self, job_description, resume_content, original_letter):
+    def _format_linkedin_data(self, linkedin_data, connections):
+        """Format LinkedIn data for the prompt."""
+        if not linkedin_data:
+            return ""
+            
+        formatted = "\n\nMy LinkedIn Profile Data:"
+        
+        # Add professional summary
+        if linkedin_data.get('summary'):
+            formatted += f"\nProfessional Summary:\n{linkedin_data['summary']}"
+        
+        # Add experience
+        if linkedin_data.get('experience'):
+            formatted += "\n\nRelevant Experience:"
+            for exp in linkedin_data['experience']:
+                formatted += f"\n- {exp['title']} at {exp['company']} ({exp['duration']})"
+                if exp['description']:
+                    formatted += f"\n  {exp['description']}"
+        
+        # Add skills
+        if linkedin_data.get('skills'):
+            formatted += "\n\nKey Skills:\n- " + "\n- ".join(linkedin_data['skills'])
+        
+        # Add recommendations
+        if linkedin_data.get('recommendations'):
+            formatted += "\n\nProfessional Recommendations:"
+            for rec in linkedin_data['recommendations'][:2]:  # Include top 2 recommendations
+                formatted += f"\n\"{rec['text']}\" - {rec['author']}"
+        
+        # Add connections at the company
+        if connections:
+            formatted += "\n\nNote: I have professional connections at the company who can speak to the company's culture and values."
+        
+        return formatted
+    
+    def generate_cover_letter(self, job_description, resume_content, original_letter, linkedin_data=None, connections=None):
         """Generate a customized cover letter using OpenAI."""
+        linkedin_content = self._format_linkedin_data(linkedin_data, connections) if linkedin_data else ""
+        
         prompt = f"""
         Create an engaging and personable cover letter based on these inputs:
         
@@ -59,25 +96,27 @@ class OpenAIService:
         {resume_content}
         
         My Original Cover Letter Style:
-        {original_letter}
+        {original_letter}{linkedin_content}
         
         Guidelines:
-        1. Start with a compelling opening that shows genuine enthusiasm for Anthropic's mission
+        1. Start with a compelling opening that shows genuine enthusiasm for the company's mission
         2. Share a brief personal story or insight that demonstrates your alignment with their values
         3. Use a warm, conversational tone while maintaining professionalism
         4. Connect your experience to their needs through specific examples, not just listing skills
-        5. Show you've done your research by referencing their work or publications
-        6. Express genuine interest in contributing to their unique approach to AI safety
-        7. Include a thoughtful closing that reinforces your cultural fit
-        8. Keep it concise but memorable
-        9. Maintain authenticity - let your personality shine through
-        10. Focus on impact and results, not just responsibilities
+        5. Show you've done your research by referencing their work
+        6. If there are connections at the company, mention your network there (but don't name-drop without permission)
+        7. Use endorsements and recommendations from LinkedIn to support your qualifications
+        8. Include a thoughtful closing that reinforces your cultural fit
+        9. Keep it concise but memorable
+        10. Maintain authenticity - let your personality shine through
+        11. Focus on impact and results, not just responsibilities
         
         Remember:
         - This is a conversation starter, not a resume rehash
         - Show enthusiasm and genuine interest in their mission
         - Demonstrate cultural fit while highlighting technical expertise
         - Be authentic and personable
+        - If you have connections at the company, subtly indicate your familiarity with their work culture
         """
         
         response = self.client.chat.completions.create(

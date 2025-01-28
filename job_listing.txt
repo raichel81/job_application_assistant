@@ -1,56 +1,72 @@
-About the job
-About One
+About the Software Engineer, API at Headspace:
 
-One’s mission is simple - to help customers achieve financial progress. We’re doing this by creating simple solutions to help our customers save, spend, borrow, and grow their money – all in one place.
 
-The U.S. consumer today deserves better. Millions of Americans today can’t access credit, build savings or wealth, and are left to manage their financial lives through multiple disconnected apps. Almost a quarter of U.S. adults are unbanked or underbanked and roughly 80% of fintech users rely on multiple accounts to manage their finances.
+Headspace is seeking a talented Software Engineer to join its growing B2B Org. Our org is responsible for building and maintaining the eligibility systems and the enrollment experiences for our growing enterprise & SME customer base, as well as building partnership integrations for strategic partnerships. This role in particular is for the partnerships team wherein you'll be tasked with prototyping, architecting, and executing on the creation of our enterprise platform, and be integral in the B2B org’s continued growth. We are also big on sharing knowledge, helping each other learn and get better, and you will see frequent mini-tech talks throughout the year. 
 
-What makes us unique? We are backed by a preeminent fintech investor (Ribbit) and the world’s largest retailer (Walmart), maintain the speed and independence of a startup, and employ a strong (and growing) collection of world-class talent.
 
-There’s never been a better moment to build a business that helps people achieve financial progress. Come build with us!
+Being on the Headspace engineering team, you’ll be working on a product that impacts more than 65M users. You will help us bring new features to life to meet our mission, while also helping push our platform to newer technologies as we embrace the cutting edge. A big goal needs talented people, so come join us and give your job a sense of purpose!
 
-The role
 
-The One@Work team is responsible for One's employer benefit features, including Instapay, savings, and budgeting. As a Full Stack Engineer at One, you will build simple and beautiful experiences for people's crucial daily interactions with their money.
+What you will do:
 
-Work closely with other engineers to ship code. We enjoy collaboration and partnering on hard problems. 
-Build and maintain documentation. As a growing and remote organization, having the necessary docs are key to our success. 
-Solve complex problems that arise at scale. We deal with real-world money movement, sensitive financial data at scale, and are creating novel financial mechanics with no real precedent.
 
-You bring
 
-10+ years of professional experience building, shipping — and growing — non-trivial products & services.
-Passion for your craft and care for the people you work with. You value quality across code, communication, and culture.
-An act-like-an-owner mentality. We have a bias toward taking action.
-A desire to keep growing your skills, and an ability to learn quickly. We hope you’ll be here for a while, and there’s no better investment than in our people.
-The Triple H Factor: Hungry, Humble, Honest
+Design and develop high-volume, low-latency applications for mission-critical systems
 
-Tools we use
+Write well designed, testable, performant, and efficient code
 
-We use the fp-ts library for functional programming with Node/TypeScript running on top of Kubernetes and AWS. We believe great engineers can learn any stack, so you do not need experience with these specific tools, but you’ll ramp up more quickly if you are familiar with functional programming concepts.
+Contribute in all phases of the development lifecycle, from collaborating with product stakeholders, writing tech specs & RFCs, to feature release and operations
 
-Pay Transparency
+Build APIs, primarily on Typescript/Node.js for our AWS-based services
 
-The estimated annual base salary for this position ranges from $170,000 to $210,000. Pay is generally based upon the level, complexity, responsibility, and job duties / requirements of the specific position. We then source candidates with the requisite skills, expertise, education, training, and experience. If you are selected for an interview, please feel welcome to speak to a Talent Partner about our compensation philosophy and other available benefits.
+Work with product and engineering teams to release services that operate at our high scale
 
-What it’s like working @ One
 
-Competitive cash
-Benefits effective on day one 
-Early access to a high potential, high growth fintech
-Generous stock option packages in an early-stage startup
-Remote friendly (anywhere in the US) and office friendly - you pick the schedule
-Flexible time off programs - vacation, sick, paid parental leave, and paid caregiver leave
-401(k) plan with match
+What you will bring:
 
-We use Covey as part of our hiring process for jobs in NYC and certain features may qualify it as an AEDT. As part of the evaluation process we provide Covey with job requirements and candidate submitted applications. We began using Covey Scout for Inbound on May 31, 2024.
 
-Please see the independent bias audit report covering our use of Covey here.
+Share the key skills, experience, qualifications & attributes needed to be successful in this role.
 
-Leveling Philosophy
 
-In order to thoughtfully scale the company and avoid downstream inequities, we’ve adopted a flat titling structure at One. Though we may occasionally post a role externally with a prefix such as “Senior” to reflect the external level of the position, we do not use prefixes in titles like that internally unless in a position which manages a team. Internal titles typically include your specific functional responsibility, such as engineering, product management or sales, and often include additional descriptors to ensure clarity of role and placement within our organization (i.e. “Engineer, Platform”, “Sales, Business Development” or “Manager, Talent”). Employees are paid commensurate with their experience and the internal level within One.
+Think of this section as skills-based qualifications (using specific skills and competencies as the requirements for the job). Utilize the role kick-off meeting with the recruiter to go over must-haves, nice-to-haves, and soft skills to screen for. Please try to keep this section concise and only to what is required to the role. 
 
-Inclusion & Belonging
 
-To build technology and products that are used and loved by people and solve real-world problems, we need to build a team with many different perspectives and experiences. We are an equal opportunity employer and value diversity at our company. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status. We encourage candidates from all backgrounds to apply. Applicants in need of special assistance or accommodation during the interview process or in accessing our website may contact us at talent@one.app.
+Required Skills:
+
+
+
+At least 2-3 years of hands-on software development experience, building APIs, (micro)services
+
+Ability to collaborate with product managers, designers, and other engineers 
+
+Experience implementing, testing and shipping new features in a remote environment
+
+Experience with unit, integration, and end-to-end testing, as well as using CI/CD system
+
+Strong communication skills, both written and verbal
+
+
+Preferred Skills:
+
+
+
+BS/MS degree in Computer Science, with 2+ years of software engineering experience
+
+Experience with Node.JS and Typescript
+
+Strong understanding of database management and object-oriented programming
+
+
+Pay & Benefits:
+
+
+The base salary range for this role is determined by a number of factors, including but not limited to skills and scope required, relevant licensure and certifications, and unique relevant experience and job-related skills. The base salary range for this role is $96,411-$133,903.
+
+
+At Headspace, cash salary is but one component of our Total Rewards package. We’re proud of our robust package inclusive of: base salary, stock awards, comprehensive healthcare coverage, monthly wellness stipend, retirement savings match, lifetime Headspace membership, unlimited, free mental health coaching, generous parental leave, and much more. Paid performance incentives are also included for those in eligible roles. Additional details about our Total Rewards package will be provided during the recruitment process.
+
+
+How we feel about Diversity, Equity, Inclusion and Belonging:
+
+
+Headspace is committed to bringing together humans from different backgrounds and perspectives, providing employees with a safe and welcoming work environment free of discrimination and harassment. We strive to create a diverse & inclusive environment where everyone can thrive, feel a sense of belonging, and do impactful work together. 
