@@ -4,6 +4,7 @@
 # OAuth credentials
 mycreds.txt
 credentials.json
+token.pickle
 
 # Python
 __pycache__/
